@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="SwdOtomation.listeners"/>
+  </listeners>
+  <test name="validate text Test(failed)">
+    <classes>
+      <class name="SwdOtomation.testNavigation">
+        <methods>
+          <include name="initialize"/>
+          <include name="closeWindow"/>
+        </methods>
+      </class> <!-- SwdOtomation.testNavigation -->
+      <class name="SwdOtomation.testText">
+        <methods>
+          <include name="initialize"/>
+          <include name="closeWindow"/>
+          <include name="basePageNavigation"/>
+        </methods>
+      </class> <!-- SwdOtomation.testText -->
+      <class name="SwdOtomation.HomepageTest">
+        <methods>
+          <include name="closeWindow"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- SwdOtomation.HomepageTest -->
+    </classes>
+  </test> <!-- validate text Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

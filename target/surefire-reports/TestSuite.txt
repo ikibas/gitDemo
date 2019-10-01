@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 58.879 sec <<< FAILURE! - in TestSuite
+basePageNavigation(SwdOtomation.testText)  Time elapsed: 0.054 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<...123> but was:<...>
+	at SwdOtomation.testText.basePageNavigation(testText.java:64)
+
+headerTest(SwdOtomation.testText)  Time elapsed: 0.034 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<aaaa> but was:<AN ACADEMY TO LEARN EVERYTHING ABOUT TESTING>
+	at SwdOtomation.testText.headerTest(testText.java:108)
+
+headerTest1(SwdOtomation.testText)  Time elapsed: 0.024 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<aaaa> but was:<AN ACADEMY TO LEARN EVERYTHING ABOUT TESTING>
+	at SwdOtomation.testText.headerTest1(testText.java:151)
+

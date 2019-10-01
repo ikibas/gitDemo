@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="4" passed="3" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2019-09-30T04:14:39Z" name="Suite" finished-at="2019-09-30T04:15:33Z" duration-ms="54034">
+    <groups>
+    </groups>
+    <test started-at="2019-09-30T04:14:39Z" name="validate home page Test" finished-at="2019-09-30T04:15:05Z" duration-ms="26325">
+      <class name="SwdOtomation.HomepageTest">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:SwdOtomation.HomepageTest@64e7619d]" started-at="2019-09-29T23:14:39Z" name="initialize" finished-at="2019-09-29T23:14:44Z" duration-ms="5785" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="basePageNavigation(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:SwdOtomation.HomepageTest@64e7619d]" started-at="2019-09-29T23:14:44Z" name="basePageNavigation" data-provider="getData" finished-at="2019-09-29T23:15:00Z" duration-ms="15204" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[nonrestrictedus@hotm.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[abcd]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[urestricted users]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+        <test-method signature="basePageNavigation(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:SwdOtomation.HomepageTest@64e7619d]" started-at="2019-09-29T23:15:00Z" name="basePageNavigation" data-provider="getData" finished-at="2019-09-29T23:15:05Z" duration-ms="5258" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[restrictedus@hotm.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[cvbn]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[restricted users]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+        <test-method is-config="true" signature="closeWindow()[pri:0, instance:SwdOtomation.HomepageTest@64e7619d]" started-at="2019-09-29T23:15:05Z" name="closeWindow" finished-at="2019-09-29T23:15:05Z" duration-ms="56" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeWindow -->
+      </class> <!-- SwdOtomation.HomepageTest -->
+    </test> <!-- validate home page Test -->
+    <test started-at="2019-09-30T04:15:05Z" name="validate text Test" finished-at="2019-09-30T04:15:20Z" duration-ms="14606">
+      <class name="SwdOtomation.testText">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:SwdOtomation.testText@4ef782af]" started-at="2019-09-29T23:15:05Z" name="initialize" finished-at="2019-09-29T23:15:19Z" duration-ms="14140" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="basePageNavigation()[pri:0, instance:SwdOtomation.testText@4ef782af]" started-at="2019-09-29T23:15:19Z" name="basePageNavigation" finished-at="2019-09-29T23:15:19Z" duration-ms="38" status="FAIL">
+          <exception class="junit.framework.ComparisonFailure">
+            <message>
+              <![CDATA[expected:<...123> but was:<...>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[junit.framework.ComparisonFailure: expected:<...123> but was:<...>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at SwdOtomation.testText.basePageNavigation(testText.java:63)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:753)
+	at org.testng.TestRunner.run(TestRunner.java:607)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
+	at org.testng.TestNG.runSuites(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1096)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.ComparisonFailure -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+        <test-method is-config="true" signature="closeWindow()[pri:0, instance:SwdOtomation.testText@4ef782af]" started-at="2019-09-29T23:15:20Z" name="closeWindow" finished-at="2019-09-29T23:15:20Z" duration-ms="27" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeWindow -->
+      </class> <!-- SwdOtomation.testText -->
+    </test> <!-- validate text Test -->
+    <test started-at="2019-09-30T04:15:20Z" name="validat enavigation bar Test" finished-at="2019-09-30T04:15:33Z" duration-ms="13062">
+      <class name="SwdOtomation.testNavigation">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:SwdOtomation.testNavigation@2fba3fc4]" started-at="2019-09-29T23:15:20Z" name="initialize" finished-at="2019-09-29T23:15:33Z" duration-ms="12891" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="basePageNavigation()[pri:0, instance:SwdOtomation.testNavigation@2fba3fc4]" started-at="2019-09-29T23:15:33Z" name="basePageNavigation" finished-at="2019-09-29T23:15:33Z" duration-ms="95" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+        <test-method is-config="true" signature="closeWindow()[pri:0, instance:SwdOtomation.testNavigation@2fba3fc4]" started-at="2019-09-29T23:15:33Z" name="closeWindow" finished-at="2019-09-29T23:15:33Z" duration-ms="73" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeWindow -->
+      </class> <!-- SwdOtomation.testNavigation -->
+    </test> <!-- validat enavigation bar Test -->
+    <test started-at="2019-09-30T04:15:33Z" name="app Test" finished-at="2019-09-30T04:15:33Z" duration-ms="0">
+    </test> <!-- app Test -->
+  </suite> <!-- Suite -->
+</testng-results>
