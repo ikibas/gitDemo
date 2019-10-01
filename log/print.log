@@ -1,1 +1,7 @@
-00:42:56.371 [main] INFO  resources.Base - driver is initial,zed
+00:46:30.994 [main] INFO  resources.Base - driver is initial,zed
+00:59:30.710 [TestNG] INFO  resources.Base - driver is initial,zed
+00:59:46.966 [TestNG] INFO  resources.Base - driver is initial,zed
+01:01:34.438 [TestNG] INFO  resources.Base - driver is initial,zed
+01:01:46.857 [TestNG] INFO  resources.Base - driver is initial,zed
+00:40:45.070 [TestNG-tests-2] INFO  resources.Base - driver is initial,zed
+00:40:59.881 [TestNG-tests-2] INFO  resources.Base - driver is initial,zed

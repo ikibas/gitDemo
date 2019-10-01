@@ -1,29 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" verbose="0">
+<suite parallel="tests" name="Failed suite [Suite]" verbose="0">
   <listeners>
     <listener class-name="SwdOtomation.listeners"/>
   </listeners>
-  <test name="validate text Test(failed)">
+  <test parallel="tests" name="validat enavigation bar Test(failed)">
     <classes>
       <class name="SwdOtomation.HomepageTest">
         <methods>
-          <include name="closeWindow"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- SwdOtomation.HomepageTest -->
+      <class name="SwdOtomation.testNavigation">
+        <methods>
+          <include name="basePageNavigation"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- SwdOtomation.testNavigation -->
+      <class name="SwdOtomation.testText">
+        <methods>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- SwdOtomation.testText -->
+    </classes>
+  </test> <!-- validat enavigation bar Test(failed) -->
+  <test parallel="tests" name="validate home page Test(failed)">
+    <classes>
+      <class name="SwdOtomation.HomepageTest">
+        <methods>
+          <include name="initialize"/>
+          <include name="basePageNavigation"/>
+        </methods>
+      </class> <!-- SwdOtomation.HomepageTest -->
+      <class name="SwdOtomation.testNavigation">
+        <methods>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- SwdOtomation.testNavigation -->
+      <class name="SwdOtomation.testText">
+        <methods>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- SwdOtomation.testText -->
+    </classes>
+  </test> <!-- validate home page Test(failed) -->
+  <test parallel="tests" name="validate text Test(failed)">
+    <classes>
+      <class name="SwdOtomation.HomepageTest">
+        <methods>
           <include name="initialize"/>
         </methods>
       </class> <!-- SwdOtomation.HomepageTest -->
       <class name="SwdOtomation.testNavigation">
         <methods>
           <include name="initialize"/>
-          <include name="closeWindow"/>
         </methods>
       </class> <!-- SwdOtomation.testNavigation -->
       <class name="SwdOtomation.testText">
         <methods>
           <include name="initialize"/>
-          <include name="closeWindow"/>
+          <include name="headerTest3"/>
           <include name="basePageNavigation"/>
           <include name="headerTest"/>
+          <include name="headerTest2"/>
           <include name="headerTest1"/>
         </methods>
       </class> <!-- SwdOtomation.testText -->

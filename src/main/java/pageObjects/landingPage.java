@@ -1,5 +1,7 @@
 package pageObjects;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -14,6 +16,8 @@ public class landingPage {
 	
 	private By Navigation = By.xpath("/html[1]/body[1]/header[1]/div[2]/div[1]/nav[1]/ul[1]");
 	private By Navigation2 = By.cssSelector("div[class*='video-banner'] h3");
+	
+	private By popup = By.xpath("//Button[text()='NO THANKS']");
 	
 	
 	public landingPage(WebDriver driver) {
@@ -40,4 +44,14 @@ public class landingPage {
 	{
 		return driver.findElement(Navigation);
 	}
+	
+	public  int getPopupSize()
+	{
+		return driver.findElements(popup).size();
+	}
+	public WebElement getPopup()
+	{
+		return driver.findElement(popup);
+	}
+	
 }

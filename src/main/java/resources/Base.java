@@ -17,7 +17,7 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 
 public class Base {
 	private static final String FileUtils = null;
-	public static WebDriver driver;
+	public  WebDriver driver;
 	public Properties prop;
 
 	public WebDriver InitializeDriver() throws IOException
@@ -32,10 +32,10 @@ public class Base {
 				prop.load(fis);
 				
 				//the following browsername should be used to run from testNG
-				//String browsername = prop.getProperty("browser");
+				String browsername = prop.getProperty("browser");
 				
 				//mvn test -Dbrowser=chrome if you would like to work from mvn command line
-				String browsername = System.getProperty("browser");
+				//String browsername = System.getProperty("browser");
 				
 				if (browsername.contains("chrome") )
 				{ 
