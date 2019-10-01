@@ -62,6 +62,14 @@ public class HomepageTest extends Base{
 		System.out.println("changes");
 		System.out.println("changes");
 
+System.out.println("changes");
+		System.out.println("changes");
+		System.out.println("changes");
+
+		System.out.println("changes");
+				System.out.println("changes");
+		System.out.println("changes");
+
 
 
 		landingPage lp = new landingPage(driver);
